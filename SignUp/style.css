@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+}
+
+#signinContainer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+}
+
+#signin{
+    display: flex;
+    justify-content: center;
+
+}
+
+#cont{
+    display: flex;
+    justify-content:center ;
+    width: 35%;
+
+
+}
+
+#form1{
+
+    width: 100%;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(234, 198, 232,0.8);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    filter: blur(0px);
+}
+
+
+#inputUsername{
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+#inputPassword{
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+#rePassword{
+    display: flex;
+    padding-bottom: 15px;
+}
+
+#submitButton{
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    background-color: rgb(174, 132, 213);
+    border: none;
+    padding: 15px 32px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 12px;
+    transition-duration: 0.3s ;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: rgb(162, 105, 214);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24) ,0 17px 50px 0 rgba(0,0,0,0.19);;
+}
+
+input{
+    
+    width: 100%;
+    padding: 12px 20px;
+    border-bottom: 2px solid rgb(162, 105, 214);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+}
+
+input:focus{
+    transition-duration: 0.3s;
+    border-bottom: 2px solid rgb(162, 105, 214);
+    border-radius: 6px;
+    background-color: rgb(240, 240, 240);
+    outline:none
+}
