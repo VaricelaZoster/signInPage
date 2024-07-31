@@ -1,14 +1,13 @@
-let username,password;
+let username,password, password1;
+
 let realpassword = 1234;
-const button = document.querySelector('button');
-console.log(button);
 let count1 = 3;
-button.addEventListener('click',sub);
 function sub(){
     username = document.getElementById('username').value;
     password = document.getElementById('password').value;
+    password1 = document.getElementById('repassword').value;
     console.log(username);
-    if(password == realpassword){
+    if(password == realpassword && password == password1){
         document.getElementById('submit').style.backgroundColor = "rgb(162, 105, 214)";
         document.getElementById('submit').disabled = true;
         document.getElementById('submit').innerHTML = `Ridirecting in.... `;
@@ -21,19 +20,7 @@ function sub(){
             count1--;
         },1000);
     }
-    else if(password == "" ){
-        empty();
-        document.getElementById('warning').innerHTML = 'Password cannot be empty!!!';
-    }
     else{
-        empty();
-        document.getElementById('warning').innerHTML = 'Incorrect Password!!!';
+        
     }
-}
-
-function empty(){
-    console.log('hi');
-    document.getElementById('password').style.borderColor = "red";
-    document.getElementById('username').value = '';
-    document.getElementById('password').value = '';
 }

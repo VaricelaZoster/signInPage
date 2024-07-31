@@ -49,13 +49,19 @@ body{
 
 #inputPassword{
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
     justify-content: center;
+}
+
+#warning{
+    color: rgb(255, 33, 33);
+    font-weight: bold;
 }
 
 #submitButton{
     display: flex;
     justify-content: center;
+    padding-top: 15px;
 }
 
 #submit{
