@@ -1,5 +1,4 @@
-const {username,password} = require('./SignUp/script');
-const {JSDOM} = require('jsdom');
+
   const _mysql = require('mysql');
   var con = _mysql.createConnection({
     host: "localhost",
