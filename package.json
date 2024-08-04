@@ -1,6 +1,18 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
     "mysql": "^2.18.1",
     "requirejs": "^2.3.7"
-  }
+  },
+  "name": "signinpage",
+  "version": "1.0.0",
+  "description": "Right now I am making a sign in page for a dummy website connected to database with an OTP verification",
+  "main": "con.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
