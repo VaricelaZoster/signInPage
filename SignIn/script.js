@@ -5,10 +5,12 @@ console.log(button);
 let count1 = 3;
 button.addEventListener('click',sub);
 function sub(){
+    document.getElementById('warning').innerHTML = '';
     username = document.getElementById('username').value;
     password = document.getElementById('password').value;
     console.log(username);
     if(password == realpassword){
+        document.getElementById('password').style.borderColor = "rgb(162, 105, 214)";
         document.getElementById('submit').style.backgroundColor = "rgb(162, 105, 214)";
         document.getElementById('submit').disabled = true;
         document.getElementById('submit').innerHTML = `Ridirecting in.... `;
@@ -34,6 +36,6 @@ function sub(){
 function empty(){
     console.log('hi');
     document.getElementById('password').style.borderColor = "red";
-    document.getElementById('username').value = '';
+    //document.getElementById('username').value = '';
     document.getElementById('password').value = '';
 }
