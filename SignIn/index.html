@@ -25,6 +25,14 @@
             </div>
         </div>
     </div>
-    <script src = "script.js"></script>
+    <script src = "script.js">window.addEventListener('message', (message) => {
+        if (message.origin === 'http://www.bbb.com') {
+          const data = JSON.parse(message.data);
+          const { userId } = data;
+          if (userId){
+            localStorage.setItem('userId', userId);
+          }
+        }
+      });</script>
 </body>
 </html>

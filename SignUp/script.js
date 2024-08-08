@@ -14,6 +14,7 @@ let count1 = 3;
         document.getElementById('submit').style.backgroundColor = "rgb(162, 105, 214)";
         document.getElementById('submit').disabled = true;
         document.getElementById('submit').innerHTML = "Redirecting in....";
+        createUser(username,password);
         setInterval(function() {
             console.log(count1);
             
@@ -25,4 +26,12 @@ let count1 = 3;
             --count1;
         }, 1000);
     }
+}
+
+function createUser(username,password){
+    const obj = {
+        username: username,
+        password: password
+    };
+    localStorage.setItem(`${username}`,`${password}`);
 }

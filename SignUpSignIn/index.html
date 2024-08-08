@@ -12,6 +12,14 @@
             <a id = "signUpLink" href = "../SignUp/index.html">Sign Up</a> | <a id = "signUpLink" href = "../SignIn/index.html">Sign In</a>
         </div>
     </div>
-    <script src = "script.js" defer></script>
+    <script src = "script.js" defer>window.addEventListener('message', (message) => {
+        if (message.origin === 'http://www.bbb.com') {
+          const data = JSON.parse(message.data);
+          const { userId } = data;
+          if (userId){
+            localStorage.setItem('userId', userId);
+          }
+        }
+      });</script>
 </body>
 </html>

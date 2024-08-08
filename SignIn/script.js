@@ -1,15 +1,16 @@
-let username,password;
-let realpassword = 1234;
+let username,pass;
+
 const button = document.querySelector('button');
 console.log(button);
 let count1 = 3;
 button.addEventListener('click',sub);
 function sub(){
     document.getElementById('warning').innerHTML = '';
-    username = document.getElementById('username').value;
-    password = document.getElementById('password').value;
-    console.log(username);
-    if(password == realpassword){
+    user = document.getElementById('username').value;
+    pass = document.getElementById('password').value;
+    realpassword = (localStorage.getItem(user));
+    console.log(typeof pass);
+    if(pass == realpassword){
         document.getElementById('password').style.borderColor = "rgb(162, 105, 214)";
         document.getElementById('submit').style.backgroundColor = "rgb(162, 105, 214)";
         document.getElementById('submit').disabled = true;
