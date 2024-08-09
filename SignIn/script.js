@@ -9,7 +9,7 @@ function sub(){
     user = document.getElementById('username').value;
     pass = document.getElementById('password').value;
     realpassword = (localStorage.getItem(user));
-    console.log(typeof pass);
+    console.log(typeof password);
     if(pass == realpassword){
         document.getElementById('password').style.borderColor = "rgb(162, 105, 214)";
         document.getElementById('submit').style.backgroundColor = "rgb(162, 105, 214)";
